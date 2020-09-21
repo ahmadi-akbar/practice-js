@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="input-group">
+            <input type="number" placeholder="0.00" id="num1">
+            <input type="number" placeholder="0.00" id="num2">
+        </div>
+        <br>
+        <div class="button-group">
+            <button id="sum">+</button>
+            <button id="minus">-</button>
+            <button id="divide">/</button>
+            <button id="multiple">*</button>
+            <button id="clear">C</button><br>
+            <button id="total-btn">=</button>
+        </div>
+
+        <div class="text-content">
+            <textarea id="textaria-content" cols="35" rows="3" placeholder="TOTAL"></textarea>
+        </div>
+    </div>
+    <script src="app.js"></script>
+
 </body>
+
 </html>
