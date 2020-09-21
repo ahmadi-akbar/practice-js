@@ -5,30 +5,23 @@ class Calculator {
         this.num2 = num2;
     }
     sum() {
-        return  this.num1 + this.num2;
-        
+        return this.num1 + this.num2;
     }
     minus() {
         return this.num1 - this.num2;
-        
     }
     multiple() {
-        return  this.num1 * this.num2;
-        
+        return this.num1 * this.num2;
     }
     divide() {
         return this.num1 / this.num2;
-        
     }
-
 }
-
 //Dom variable
 const button = document.querySelector('.button-group').addEventListener('click', calculateBtn);
 const textarea = document.querySelector('#textaria-content');
 //save Total variable
 let saveTotal = 0;
-
 
 //eventListenr function
 function calculateBtn(e) {
@@ -44,31 +37,31 @@ function calculateBtn(e) {
     //selected button
     switch (e.target.id) {
         case 'sum':
-            const sum = calculate.sum();
-            saveTotal = sum;
-            textarea.setAttribute('placeholder',saveTotal);
+            saveTotal = calculate.sum();
+
+            textarea.setAttribute('placeholder', saveTotal);
             break;
         case 'minus':
-            const minus = calculate.minus();
-            saveTotal = minus;
-            textarea.setAttribute('placeholder',saveTotal);
+            saveTotal = calculate.minus();
+
+            textarea.setAttribute('placeholder', saveTotal);
             break;
         case 'divide':
-            const divide = calculate.divide();
-            saveTotal = divide;
-            textarea.setAttribute('placeholder',saveTotal);
+            saveTotal = calculate.divide();
+
+            textarea.setAttribute('placeholder', saveTotal);
             break;
         case 'multiple':
-            const multiple = calculate.multiple();
-            saveTotal = multiple;
-            textarea.setAttribute('placeholder',saveTotal);
+            saveTotal = calculate.multiple();
+
+            textarea.setAttribute('placeholder', saveTotal);
             break;
         case 'total-btn':
             textarea.textContent = saveTotal;
             break
         default:
             textarea.textContent = '';
-            textarea.setAttribute('placeholder',0);
+            textarea.setAttribute('placeholder', 0);
             break;
     }
 }
