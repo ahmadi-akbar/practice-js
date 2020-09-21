@@ -5,20 +5,20 @@ class Calculator {
         this.num2 = num2;
     }
     sum() {
-        const sum = this.num1 + this.num2;
-        return sum;
+        return  this.num1 + this.num2;
+        
     }
     minus() {
-        const minus = this.num1 - this.num2;
-        return minus;
+        return this.num1 - this.num2;
+        
     }
     multiple() {
-        const multiple = this.num1 * this.num2;
-        return multiple;
+        return  this.num1 * this.num2;
+        
     }
     divide() {
-        const divide = this.num1 / this.num2;
-        return divide;
+        return this.num1 / this.num2;
+        
     }
 
 }
